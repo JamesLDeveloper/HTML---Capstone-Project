@@ -5,20 +5,29 @@ html {
 display: flex;
 }
 
+.fixed-header .logo {
+display: flex;
+}
+
+.fixed-header .other-buttons{
+display: flex;
+}
+
 @media only screen and (max-width: 760px) {
   .fixed-header .desktop {
     display: none;
   }
     .fixed-header .mobile {
       display: flex;
+      justify-content: space-around;
     }
 }
 
 @media only screen and (min-width: 760px) {
   .fixed-header .desktop {
     display: flex;
+    justify-content: space-between;
   }
-
     .fixed-header .mobile {
       display: none;
     }
