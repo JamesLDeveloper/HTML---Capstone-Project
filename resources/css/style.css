@@ -1,0 +1,37 @@
+html {
+}
+
+.fixed-header {
+display: flex;
+}
+
+@media only screen and (max-width: 760px) {
+  .fixed-header .desktop {
+    display: none;
+  }
+    .fixed-header .mobile {
+      display: flex;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+  .fixed-header .desktop {
+    display: flex;
+  }
+
+    .fixed-header .mobile {
+      display: none;
+    }
+  }
+
+
+.main-content .learn-something-new {
+justify-content: flex-start;
+display: flex;
+}
+
+.main-content .learn-something-new .learn-something-new-img-container img{
+height: auto;
+width: 60%;
+display: flex;
+}
