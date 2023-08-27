@@ -14,6 +14,7 @@ align-items: center;
 background-color: white;
 }
 
+/* don't think these are needed since included in @media only screen part
 .fixed-header .logo {
 display: flex;
 justify-content: flex-start;
@@ -24,6 +25,8 @@ display: flex;
 justify-content: space-between;
 }
 
+*/
+
 @media only screen and (max-width: 760px) {
   .fixed-header .desktop {
     display: none;
@@ -31,14 +34,45 @@ justify-content: space-between;
   .fixed-header .mobile {
       display: inline-flex;
       justify-content: space-around;
+      align-items: center;
+      margin: auto;
    }
+     .fixed-header .mobile .header-mobile-button {
+         display: inline-flex;
+         justify-content: space-around;
+         align-items: center;
+         margin: auto;
+      }
 }
 
 @media only screen and (min-width: 760px) {
   .fixed-header .desktop {
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
   }
+  .fixed-header .desktop .logo {
+       display: flex;
+       justify-content: space-between;
+       height: 32px;
+       width: auto;
+       align-items: center;
+        margin: auto;
+     }
+       .fixed-header .desktop .logo img{
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+          }
+   .fixed-header .desktop .other-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 16px;
+            margin: auto;
+          }
     .fixed-header .mobile {
       display: none;
     }
@@ -54,7 +88,7 @@ flex-wrap: wrap;
 .main-content .learn-something-new {
 display: flex;
 justify-content: flex-start;
-background-color: grey;
+background-color: #D3D3D3;
 padding: 32px 24px;
 }
 
@@ -74,6 +108,7 @@ height: auto;
 display: flex;
 width: 25%;
 height: auto;
+flex-flow: row wrap;
 }
 
 .main-content .learn-something-new .learn-something-new-text-container .learn-something-new-button {
@@ -86,7 +121,7 @@ display: flex;
 display: inline-flex;
 width: 100%;
 height: auto;
-flex-wrap: wrap;
+flex-wrap: no-wrap;
 }
 
 .main-content .essential-info-container .essential-info-main {
@@ -111,7 +146,7 @@ flex-wrap: wrap;
 }
 
 .main-content .essential-info-container .essential-info-find-out-more-section {
-display: flex;
+display: inline-flex;
 width: 30%;
 height: auto;
 flex-wrap: wrap;
@@ -121,21 +156,46 @@ flex-wrap: wrap;
 display: flex;
 width: 100%;
 height: auto;
-flex-wrap: wrap;
+flex-wrap: nowrap;
+align-content: center;
+align-items: center;
 }
 
 .main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-image-container {
 display: flex;
+width: 100%;
+height: auto;
 }
 
 .main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-image-container img {
 display: flex;
-width: 35%;
+width: 100%;
 height: auto;
 }
 
 .main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-text {
 display: flex;
-width: 65%;
+width: 100%;
 height: auto;
+flex-flow: row wrap;
+align-content: center;
+align-items: center;
+}
+
+.main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-text .find-out-more-card-text-header{
+display: flex;
+width: 100%;
+height: auto;
+flex-flow: row wrap;
+align-content: center;
+align-items: center;
+}
+
+.main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-text .find-out-more-card-button{
+display: flex;
+width: 100%;
+height: auto;
+flex-flow: row wrap;
+align-content: center;
+align-items: center;
 }
