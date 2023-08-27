@@ -1,7 +1,6 @@
 html {
   font-family: "helvetica", sans-serif;
   font-size: 16px;
-  display: flex;
 }
 
 .fixed-header {
@@ -56,21 +55,25 @@ flex-wrap: wrap;
 display: flex;
 justify-content: flex-start;
 background-color: grey;
+padding: 32px 24px;
 }
 
 .main-content .learn-something-new .learn-something-new-img-container {
 display: flex;
+width: 60%;
+height: auto;
 }
 
 .main-content .learn-something-new .learn-something-new-img-container img{
 display: flex;
+width: 100%;
 height: auto;
-width: 60%;
 }
 
 .main-content .learn-something-new .learn-something-new-text-container{
 display: flex;
 width: 25%;
+height: auto;
 }
 
 .main-content .learn-something-new .learn-something-new-text-container .learn-something-new-button {
@@ -80,15 +83,15 @@ display: flex;
 }
 
 .main-content .essential-info-container {
-display: flex;
-width: 100%
+display: inline-flex;
+width: 100%;
 height: auto;
 flex-wrap: wrap;
 }
 
 .main-content .essential-info-container .essential-info-main {
 display: flex;
-width: 60%
+width: 60%;
 height: auto;
 flex-wrap: wrap;
 }
@@ -109,6 +112,30 @@ flex-wrap: wrap;
 
 .main-content .essential-info-container .essential-info-find-out-more-section {
 display: flex;
-width: 30%
+width: 30%;
+height: auto;
 flex-wrap: wrap;
+}
+
+.main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card {
+display: flex;
+width: 100%;
+height: auto;
+flex-wrap: wrap;
+}
+
+.main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-image-container {
+display: flex;
+}
+
+.main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-image-container img {
+display: flex;
+width: 35%;
+height: auto;
+}
+
+.main-content .essential-info-container .essential-info-find-out-more-section .find-out-more-card .find-out-more-card-text {
+display: flex;
+width: 65%;
+height: auto;
 }
