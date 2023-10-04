@@ -18,6 +18,7 @@ justify-content: space-between;
 align-items: center;
 background-color: white;
 margin: auto;
+flex-wrap: wrap;
 }
 
 /* don't think these are needed since included in @media only screen part
@@ -53,10 +54,11 @@ justify-content: space-between;
 
 @media only screen and (min-width: 760px) {
   .fixed-header .desktop {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto auto auto 1.5rem;
+    flex-wrap: wrap;
   }
   .fixed-header .desktop .logo {
        display: flex;
@@ -75,6 +77,7 @@ justify-content: space-between;
             align-items: center;
             align-content: center;
              margin: auto;
+             flex: 60%
           }
        .fixed-header .desktop .logo img{
             display: inline-flex;
@@ -88,7 +91,8 @@ justify-content: space-between;
             align-items: center;
             column-gap: 1rem;
             margin: auto;
-            flex: 0 0 1000px;
+            flex: 40%
+
           }
    .fixed-header .desktop .other-buttons .hover-content {
         font-size: 0.5rem;
